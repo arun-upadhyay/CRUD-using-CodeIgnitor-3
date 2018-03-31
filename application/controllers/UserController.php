@@ -10,6 +10,7 @@ class UserController extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        log_message('debug', "Initializing intial objects.....");
         $this->load->model('user');
         $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
